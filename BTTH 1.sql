@@ -59,3 +59,15 @@ INSERT INTO customers (full_name, email, phone) VALUE
 
 -- Điều này chứng minh rằng ràng buộc UNIQUE hoạt động đúng,
 -- -> Giúp đảm bảo tính toàn vẹn dữ liệu (data integrity).
+
+SELECT * FROM books
+WHERE category = 'Trinh tham'
+AND price < 100000;
+
+SELECT *
+FROM customers
+WHERE email LIKE '%@gmail.com';
+
+SELECT * FROM books
+ORDER BY price DESC
+LIMIT 3;
